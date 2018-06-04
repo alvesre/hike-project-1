@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<metadata charset="utf-8">
+		<meta charset="utf-8">
 		<meta name="viewimport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<title>Cachorros: Os animais mais queridos do mundo</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
+    </head>
 <body>
 	<!--script-->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
   			<div class="collapse navbar-collapse" id="navbarSupportedContent">
     			<ul class="navbar-nav ml-auto">
       				<li class="nav-item active">
-        				<a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+        				<a class="nav-link" href="#">Sobre<span class="sr-only">(current)</span></a>
       				</li>
       				<li class="nav-item">
         				<a class="nav-link" href="#">Por que cachorros</a>
@@ -33,7 +33,10 @@
         				<a class="nav-link" href="#">Alimentação</a>
       				</li>
       				<li class="nav-item">
-        				<a class="btn btn-primary btn-lg" href="form.html" target=".../form.html">Adotar</a>
+        				<a>
+        				<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Adotar</button>
+						</a>
       				</li>
  	   			</ul>
 			</div>
@@ -46,7 +49,8 @@
 				<div class="col text-center">
 					<h1>Cachorros tornam sua vida mais feliz</h1>
 					<p>A chave para uma vida feliz é ter um cachorro</p>
-					<a class="btn btn-primary btn-lg" href="form.html" target=".../form.html">Adotar</a>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Adotar</button>
 				</div>
 			</div>
 		</div>
@@ -112,10 +116,11 @@
 		<div class="container">
 			<div class="row justify-content-around align-items-center">
 				<!--coluna 1-->
-				<div class="col-12 col-md-5">s
+				<div class="col-12 col-md-5">
 					<h2>Sempre divertidos</h2>
 					<p>Joga essa bolinha pra mim? Posso brincar com seu chinelo?</p>
-					<a class="btn btn-primary btn-lg" href="form.html" target=".../form.html">Adotar</a>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Adotar</button>
 				</div>
 				<!--coluna 2-->
 				<div class="col-12 col-md-5">
@@ -131,7 +136,8 @@
 				<div class="col-12 text-center">
 					<h2>Adote um cãozinho e ame-o para sempre.</h2>
 					<p> Você só vive uma vez</p>
-					<a class="btn btn-primary btn-lg" href="form.html" target=".../form.html">Adotar</a>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Adotar</button>
 				</div>
 			</div>
 		</div>
@@ -139,6 +145,73 @@
 	<footer class="text-center">
 		<small>Feito com amor <span><img class="footer-logo" src="img/hike-logo-small.png" alt=""></span> por um Heiki.</small>
 	</footer>
-	
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     	<div class="modal-header">
+        	<h5 class="modal-title" id="exampleModalLabel">Preencha seus dados no formulário abaixo que entraremos em contato:</h5>
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         		<span aria-hidden="true">&times;</span>
+        	</button>
+     	</div>
+    <div class="modal-body">
+		<form>
+  		 	<div class="items container">
+    	  		<div class="form-row">
+      	  			<div class="form-group">
+          				<h6>Nome</h6>
+          				<label for="name"></label>
+          				<input type="text" id="name" placeholder="Ex. Nome Sobrenome"/>
+        			</div>
+        			<div class="form-group">
+          				<h6>Telefone</h6>
+          				<label for="telephone"></label>
+          				<input type="number" id="telephone" placeholder="Ex. 11 99999-0000"/>
+        			</div>
+        			<div class="form-group">
+          				<h6>Email</h6>
+         				<label for="email"></label>
+         				<input type="text" id="inputEmail" placeholder="Ex. exemplo@exemplo.com.br">
+        			</div>
+        			<div class="form-group">
+          				<h6>Endereço</h6>
+          				<label for="inputAddress"></label>
+          				<input type="text" id="inputAddress" placeholder="Ex. Avenida Paulista">
+        			</div>
+        			<div class="form-group">
+          				<h6>Cidade</h6>
+          				<label for="inputCity"></label>
+          				<input type="text" id="inputCity" placeholder="Ex. São Paulo">
+        			</div>
+        			<div class="form-group">
+          				<h6>Estado</h6>
+          				<label for="inputState"></label>
+          				<input type="text" id="inputState" placeholder="Ex. São Paulo">
+        			</div>
+        			<div class="form-group">
+          				<h6>Tenho preferência por:</h6>
+          				<label for="inputState"></label>
+            			<select id="inputState">
+              				<option selected>Escolha...</option>
+              				<option>Menino</option>
+              				<option>Menina</option>
+              				<option>Indiferente</option>
+            			</select>
+        			</div>
+        			<div>
+          				<h6>Por que você quer adotar um cachorrro?</h6>
+          				<textarea class="col-md-12" id="msg" placeholder="Conte-nos =)"></textarea>
+        			</div>
+        			<div>
+          				<button type="submit" class="btn btn-primary align-items-center justify-content-around" >Enviar</button>
+        			</div>
+      			</div>
+     		</div>
+		</form>
+	</div>
+	</div>
+  </div>
+</div>
 </body>
 </html>
