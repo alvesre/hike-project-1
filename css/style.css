@@ -108,15 +108,7 @@ form {
 	background-image: url("../img/dogs-pattern.png");
 	background-size: 192px 192px;
 	margin: 10px 15px;
-	padding: 20px;
-
-}
-
-.contents {
-	 
-}
-button {
-	margin: 20px;
+	padding: 20px; 
 }
 @media (min-width: 576px) {
 	form {
